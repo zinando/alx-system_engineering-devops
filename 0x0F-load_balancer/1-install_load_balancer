@@ -17,7 +17,7 @@ frontend  festquadrant-frontend
 backend festquadrant-backend
         balance roundrobin
         server 138199-web-01 100.25.200.66:80 check
-        server 138199-web-02 54.90.62.130:80 check
+        server 138199-web-02 100.26.212.8 check
 "
 echo "$server_config" | sudo tee -a /etc/haproxy/haproxy.cfg
 
