@@ -7,3 +7,4 @@ then
   # Send a HUP signal to the Gunicorn master process to reload the worker processes
   kill -HUP "$pid"
 fi
+sudo systemctl reload gunicorn
