@@ -5,6 +5,5 @@
 if pid=$(pgrep -x "gunicorn")
 then
   # Send a HUP signal to the Gunicorn master process to reload the worker processes
-  kill -HUP "$pid"
+  kill -HUP $pid
 fi
-sudo systemctl reload gunicorn
